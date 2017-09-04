@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+}
+
+main {
+	background-color: lightgray;
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: skyblue;
+	height: 700px;
+	position: relative;
+}
+
+.about {
+	background-color: indianred;
+	height: 700px;
+}
+
+.services {
+	background-color: midnightblue;
+	height: 300px;
+}
+
+.projects {
+	background-color: crimson;
+	height: 300px;
+}
+
+.gallery {
+	background-color: orange;
+	height: 400px;
+}
+
+footer {
+	background-color: green;
+	height: 50px;
+}
+
+nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+footer {
+	padding: 30px;
+}
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: gray;
+	margin: 0 auto; /*centers the element*/
+}
+
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 2px;
+	line-height: 48px;
+	text-align: center;
+
+}
+
+ul > li > a{
+	text-decoration: none;
+}
+
+.box {
+	border: 5px solid #fff;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
