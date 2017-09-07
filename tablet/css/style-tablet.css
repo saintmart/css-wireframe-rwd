@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+}
+
+main {
+	background-color: lightgray;
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: skyblue;
+	height: 700px;
+	position: relative;
+}
+
+.about {
+	background-color: indianred;
+	min-height: 300px;
+}
+
+.services {
+	background-color: midnightblue;
+	min-height: 300px;
+	color: white;
+}
+
+.projects {
+	background-color: crimson;
+	height: 300px;
+}
+
+.gallery {
+	background-color: orange;
+	min-height: 400px;
+}
+
+footer {
+	background-color: green;
+	height: 100px;
+}
+
+nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+footer {
+	padding: 30px;
+}
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: gray;
+	margin: 0 auto; /*centers the element*/
+}
+
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	line-height: 48px;
+	text-align: center;
+
+}
+
+ul > li > a{
+	text-decoration: none;
+}
+
+.box {
+	border: 5px solid #fff;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 20px;
+
+}
+
+.column {
+	border: 1px solid #fff;
+	width: 31%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 12px;
+
+}
+
+.gallery {
+	padding-bottom: 12px;
+	margin-bottom: 10px;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img[alt*="Services"] {
+border: 1px solid #fff;
+width: 60px;
+height: 60px;
+display: block; /*change inline to block*/
+float: left;
+margin-right: 10px;
+
+}
+
+img[alt*="Services"] ~ h3 {
+	margin-bottom: 10px;
+}
+
+img[alt*="Services"] ~ p {
+	overflow: hidden;
+}
+
+.gallery > .column {
+	width: 23%;
+	margin: 0 1%;
+	border-color: black;
+}
+
+img[alt*="Gallery"] {
+	width: 100%;
+	height: 100px;
+	display: block;
+	border: 1px solid black;
+}
+
+img[alt*="Social"] {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	display: block;
+	float: left;
+	margin: 25px;
+}
+
+div.contact {
+	float: right;
+}
+
+/*tablet*/
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	body {
+		background-color: yellow;
+	}
+
+	nav {
+		width: 200px;
+		height: 100%;
+	}
+
+	.box {
+		padding: 20px;
+		color: black;
+    }
+
+    .box > h1 {
+    	font-size: 20px;
+    }
+
+    .banner
+	.about,
+	.projects,
+	.services {
+		width: 100%;
+	}
+
+	.gallery {
+		width: 100%;
+		min-height: 400px;
+
+	}
+
+	.services1,
+	.services2,
+	.services3 {
+		width: 100%;
+		border: 1px solid black;
+	}
+
+	.column1,
+	.column2,
+	.column3,
+	.column4 {
+		width: 50%;
+		float: left;
+		border: 1px solid black;
+		margin-right: 0 10px;
+	}
+
+	small {
+		position: relative;
+		left: 220px;
+	}
+
+	.contact {
+		position: relative;
+		right: 210px;
+	}
+}

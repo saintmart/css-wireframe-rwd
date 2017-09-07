@@ -4,31 +4,20 @@
 	box-sizing: border-box;
 }
 
-.page {
-	width: auto;
-	position: absolute;
-}
-
 nav {
 	background-color: lightyellow;
-	width: auto;
-	height: auto;
-	position: relative;
-/*	margin-left: 200px;*/
+	height: 100%;
+	width: 200px;
+	position: fixed;
 }
 
 main {
 	background-color: lightgray;
-	margin: 100%;
-	margin: 0 auto;
+	margin-left: 200px;
 }
 
 .banner {
 	background-color: skyblue;
-	/*background-image: url(../images/test_background.jpg);*/
-/*	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;*/
 	height: 700px;
 	position: relative;
 }
@@ -56,7 +45,7 @@ main {
 
 footer {
 	background-color: green;
-	height: 50px;
+	height: 100px;
 }
 
 nav,
@@ -99,7 +88,7 @@ ul > li > a{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	color: black;
+	color: white;
 	font-size: 20px;
 
 }
@@ -169,70 +158,29 @@ div.contact {
 	float: right;
 }
 
-@media only screen and (max-width: 400px) {
-	body {
-		background-color: red;
-	}
-	.banner,
-	.about,
-	.services,
-	.projects,
-	.gallery {
-		width: 50%; /*50% of their parent container, .page*/
-		float: left; /*to solve the stack up issue*/
-	}
-
-	.services1,
-	.services2,
-	.services3 {
-		width: 33.33%;
-		float: left;
-	}
-
-	.column1,
-	.column2,
-	.column3,
-	.column4 {
-		width: 25%;
-		float: left;
-	}
-
-	nav {
-		margin-left: 0;
-		width: 100%;
-	}
-
-}
-
-/*tablet*/
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	body {
-		background-color: yellow;
-	}
-}
-
-/*laptop/desktop*/
-
 @media only screen and (min-width: 961px) {
 	body {
 		background-color: blue;
+
 	}
 
-	/*.page {*/
-		width: 960px;
-		margin: 0 auto; /*puts a margin left and right*/
+	.box {
+		padding: 20px;
+		color: black;
+    }
+
+    .box > h1 {
+    	font-size: 20px;
+    }
+
+    .banner
+	.about,
+	.projects,
+	.services {
+		width: 100%;
 	}
 
-	/*.feature-1,
-	.feature-2,
-	.*/feature-3 {
-		width: 33.33%; /*33.33% width per container*/
-		float: left;
-	}
-
-	/*.header {*/
-		height: 400px;
-	}
-
+	.gallery {
+		width: 100%;
+		min-height: 400px;
 }
